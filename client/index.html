@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form id        =  "uploadForm"
+      enctype   =  "multipart/form-data"
+      action    =  "/api/photo"
+      method    =  "post"
+       >
+    <input type="file" name="userPhoto" multiple/>
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+<!--<?php
+            if (isset($_FILES['my_file'])) {
+                $myFile = $_FILES['my_file'];
+                $fileCount = count($myFile["name"]);
+
+                for ($i = 0; $i < $fileCount; $i++) {
+                    ?>
+<p>File #<?= $i+1 ?>:</p>
+<p>
+    Name: <?= $myFile["name"][$i] ?><br>
+    Temporary file: <?= $myFile["tmp_name"][$i] ?><br>
+    Type: <?= $myFile["type"][$i] ?><br>
+    Size: <?= $myFile["size"][$i] ?><br>
+    Error: <?= $myFile["error"][$i] ?><br>
+</p>
+<?php
+                }
+            }
+        ?>-->
+</body>
+</html>
